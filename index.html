@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>BeautyStyle | Пространство красоты</title>
+    <link rel="stylesheet" href="style.css?v=18">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <div class="logo-container">
+                <div class="logo">✦ BEAUTYSTYLE</div>
+                <div class="logo-dot"></div>
+            </div>
+            
+            <div class="menu-grid">
+                <div class="menu-item" data-section="home">
+                    <span class="menu-number">00</span>
+                    <span class="menu-text">Начало</span>
+                </div>
+                <div class="menu-item" data-section="experience">
+                    <span class="menu-number">01</span>
+                    <span class="menu-text">Опыт</span>
+                </div>
+                <div class="menu-item" data-section="craft">
+                    <span class="menu-number">02</span>
+                    <span class="menu-text">Мастерство</span>
+                </div>
+                <div class="menu-item" data-section="gallery">
+                    <span class="menu-number">03</span>
+                    <span class="menu-text">Портфолио</span>
+                </div>
+                <div class="menu-item" data-section="connect">
+                    <span class="menu-number">04</span>
+                    <span class="menu-text">Связь</span>
+                </div>
+            </div>
+            
+            <button class="book-btn pulse">
+                <span>Записаться</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Основной контент с горизонтальной прокруткой -->
+    <main class="horizontal-scroll">
+        <!-- Секция 1: Начало с 3D-эффектом -->
+        <section id="home" class="section section-home">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="text-reveal">
+                        <h1>ИСКУССТВО</h1>
+                        <h1 class="outline">БЫТЬ</h1>
+                        <h1>СОБОЙ</h1>
+                    </div>
+                    <p class="hero-description">Пространство, где каждая деталь — это отражение вашей уникальности. Мы создаем не просто прически, мы создаем настроение.</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Лет совершенства</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5k+</span>
+                            <span class="stat-label">Счастливых историй</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Индивидуальный подход</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="floating-cards">
+                        <div class="hero-photo-stack">
+                            <div class="card-3d card-3d--stack">
+                                <img src="салон3.png" alt="Интерьер салона">
+                            </div>
+                            <div class="card-3d card-3d--stack">
+                                <img src="салон2.png" alt="Зона салона">
+                            </div>
+                        </div>
+                        <div class="card-3d card-3d--hero-main">
+                            <img src="стрижка.png" alt="Работа мастера — стрижка">
+                        </div>
+                    </div>
+                    <button id="heroQuickBookBtn" class="hero-side-cta" type="button">Записаться онлайн</button>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Секция 2: Опыт (интерактивная временная шкала) -->
+        <section id="experience" class="section section-experience">
+            <div class="timeline-container">
+                <div class="timeline-header">
+                    <h2>Путь к совершенству</h2>
+                    <div class="timeline-controls">
+                        <button class="timeline-prev">←</button>
+                        <button class="timeline-next">→</button>
+                    </div>
+                </div>
+                
+                <div class="timeline-track">
+                    <div class="timeline-year" data-year="2015">
+                        <div class="year-marker">2015</div>
+                        <div class="year-content">
+                            <h3>Рождение стиля</h3>
+                            <p>Открытие первого пространства</p>
+                        </div>
+                    </div>
+                    <div class="timeline-year" data-year="2017">
+                        <div class="year-marker">2017</div>
+                        <div class="year-content">
+                            <h3>Команда мечты</h3>
+                            <p>Собрали лучших мастеров</p>
+                        </div>
+                    </div>
+                    <div class="timeline-year" data-year="2019">
+                        <div class="year-marker">2019</div>
+                        <div class="year-content">
+                            <h3>Новый уровень</h3>
+                            <p>Запуск авторских техник</p>
+                        </div>
+                    </div>
+                    <div class="timeline-year" data-year="2021">
+                        <div class="year-marker">2021</div>
+                        <div class="year-content">
+                            <h3>Признание</h3>
+                            <p>Победа в международном конкурсе</p>
+                        </div>
+                    </div>
+                    <div class="timeline-year" data-year="2023">
+                        <div class="year-marker">2023</div>
+                        <div class="year-content">
+                            <h3>Эко-стиль</h3>
+                            <p>Переход на органические материалы</p>
+                        </div>
+                    </div>
+                    <div class="timeline-year" data-year="2024">
+                        <div class="year-marker">2024</div>
+                        <div class="year-content">
+                            <h3>Персональные консультации</h3>
+                            <p>Запустили диагностику образа и индивидуальные бьюти-маршруты</p>
+                        </div>
+                    </div>
+                    <div class="timeline-year" data-year="2025">
+                        <div class="year-marker">2025</div>
+                        <div class="year-content">
+                            <h3>Новые техники</h3>
+                            <p>Внедрили авторские протоколы восстановления волос</p>
+                        </div>
+                    </div>
+                    <div class="timeline-year" data-year="2026">
+                        <div class="year-marker">2026</div>
+                        <div class="year-content">
+                            <h3>Цифровой сервис</h3>
+                            <p>Обновили онлайн-запись и персональные рекомендации для клиентов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 3: Мастерство (нестандартная сетка услуг) -->
+        <section id="craft" class="section section-craft">
+            <div class="craft-grid">
+                <!-- ЗАГЛУШКА ФОТО ДЛЯ КАРТОЧКИ 1 (архитектура формы) -->
+                <div class="craft-card">
+                    <div class="card-overlay"></div>
+                    <div class="craft-content">
+                        <span class="craft-tag">01</span>
+                        <h3>Архитектура <br>формы</h3>
+                        <p>Стрижка, подчеркивающая вашу индивидуальность</p>
+                        <div class="craft-price">от 2500 ₽</div>
+                        <button class="craft-btn" data-service="Стрижка">Выбрать</button>
+                    </div>
+                    <img src="салон.png" alt="Haircut placeholder">
+                </div>
+                
+                <!-- ЗАГЛУШКА ФОТО ДЛЯ КАРТОЧКИ 2 (цветовая гармония) -->
+                <div class="craft-card">
+                    <div class="card-overlay"></div>
+                    <div class="craft-content">
+                        <span class="craft-tag">02</span>
+                        <h3>Цветовая <br>гармония</h3>
+                        <p>Окрашивание премиум-класса</p>
+                        <div class="craft-price">от 4000 ₽</div>
+                        <button class="craft-btn" data-service="Окрашивание">Выбрать</button>
+                    </div>
+                    <img src="окрашивание.png" alt="Color placeholder">
+                </div>
+                
+                <!-- ЗАГЛУШКА ФОТО ДЛЯ КАРТОЧКИ 3 (текстурные решения) -->
+                <div class="craft-card">
+                    <div class="card-overlay"></div>
+                    <div class="craft-content">
+                        <span class="craft-tag">03</span>
+                        <h3>Текстурные <br>решения</h3>
+                        <p>Укладки для любого случая</p>
+                        <div class="craft-price">от 1500 ₽</div>
+                        <button class="craft-btn" data-service="Укладка">Выбрать</button>
+                    </div>
+                    <img src="укладка.png" alt="Styling placeholder">
+                </div>
+                
+                <!-- ЗАГЛУШКА ФОТО ДЛЯ КАРТОЧКИ 4 (экспресс-уход) -->
+                <div class="craft-card">
+                    <div class="card-overlay"></div>
+                    <div class="craft-content">
+                        <span class="craft-tag">04</span>
+                        <h3>Экспресс-уход</h3>
+                        <p>Восстановление за 30 минут</p>
+                        <div class="craft-price">от 900 ₽</div>
+                        <button class="craft-btn" data-service="Восстановление волос">Выбрать</button>
+                    </div>
+                    <img src="восстановление.png" alt="Care placeholder">
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 4: Портфолио (editorial layout на 6 фото) -->
+        <section id="gallery" class="section section-gallery">
+            <div class="portfolio-layout">
+                <div class="portfolio-headline">
+                    <h2>Лучшие моменты в одном кадре</h2>
+                </div>
+
+                <article class="portfolio-feature">
+                    <img src="крупный план.png" alt="Главная работа">
+                    <div class="portfolio-text">Преображение с акцентом на естественную форму</div>
+                </article>
+
+                <div class="portfolio-tiles">
+                    <article class="portfolio-tile">
+                        <img src="мягкий блонд.png" alt="Портфолио 1">
+                        <div class="tile-label">Мягкий блонд</div>
+                    </article>
+                    <article class="portfolio-tile">
+                        <img src="чистая линия.png" alt="Портфолио 2">
+                        <div class="tile-label">Чистая линия</div>
+                    </article>
+                    <article class="portfolio-tile">
+                        <img src="объем.png" alt="Портфолио 3">
+                        <div class="tile-label">Объем и текстура</div>
+                    </article>
+                    <article class="portfolio-tile">
+                        <img src="классический стиль.png" alt="Портфолио 4">
+                        <div class="tile-label">Классический стиль</div>
+                    </article>
+                    <article class="portfolio-tile">
+                        <img src="салонный уход.png" alt="Портфолио 5">
+                        <div class="tile-label">Салонный уход</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 5: Связь (футуристичная форма) -->
+        <section id="connect" class="section section-connect">
+            <div class="connect-wrapper">
+                <div class="connect-left">
+                    <h2>Начнем<br>диалог?</h2>
+                    <div class="connect-info">
+                        <div class="info-block">
+                            <div class="info-label">Телефон</div>
+                            <a href="tel:+74951234567" class="info-value">+7 (495) 123-45-67</a>
+                        </div>
+                        <div class="info-block">
+                            <div class="info-label">Email</div>
+                            <a href="mailto:info@beautystyle.ru" class="info-value">info@beautystyle.ru</a>
+                        </div>
+                        <div class="info-block">
+                            <div class="info-label">Адрес</div>
+                            <div class="info-value">Москва, пр. Вернадского, 10</div>
+                        </div>
+                        <div class="info-block">
+                            <div class="info-label">Режим</div>
+                            <div class="info-value">9:00 — 21:00 ежедневно</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="connect-right">
+                    <form id="bookingForm" class="floating-form">
+                        <div class="form-field">
+                            <input type="text" id="name" required>
+                            <label for="name">Ваше имя</label>
+                            <span class="field-border"></span>
+                        </div>
+                        
+                        <div class="form-field">
+                            <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" inputmode="tel" required>
+                            <label for="phone">Телефон</label>
+                            <span class="field-border"></span>
+                        </div>
+                        
+                        <div class="form-field">
+                            <select id="service" required>
+                                <option>Стрижка</option>
+                                <option>Окрашивание</option>
+                                <option>Укладка</option>
+                                <option>Восстановление волос</option>
+                            </select>
+                            <label for="service">Услуга</label>
+                            <span class="field-border"></span>
+                        </div>
+                        
+                        <div class="form-field form-field-datetime">
+                            <input type="hidden" id="datetime" name="datetime" required>
+                            <input type="text" id="datetimeDisplay" class="datetime-display" readonly autocomplete="off" placeholder=" " inputmode="none" aria-haspopup="dialog" aria-expanded="false" aria-controls="bookingDatetimeModal">
+                            <button type="button" class="datetime-picker-btn" id="datetimeOpenBtn" aria-label="Выбрать дату и время">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                            </button>
+                            <label for="datetimeDisplay">Дата и время</label>
+                            <span class="field-border"></span>
+                        </div>
+
+                        <div class="form-field form-field-comment">
+                            <textarea id="comment" name="comment" rows="1" maxlength="250" placeholder=" "></textarea>
+                            <label for="comment">Комментарий</label>
+                            <span class="field-border"></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Отправить</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="portfolioModal" class="content-modal" aria-hidden="true">
+        <div class="content-modal__backdrop" id="portfolioModalBackdrop" tabindex="-1"></div>
+        <div class="content-modal__panel content-modal__panel--image" role="dialog" aria-modal="true" aria-labelledby="portfolioModalTitle">
+            <button type="button" class="content-modal__close" id="portfolioModalClose" aria-label="Закрыть">×</button>
+            <img id="portfolioModalImage" class="content-modal__image" src="" alt="">
+            <div class="content-modal__meta">
+                <h3 id="portfolioModalTitle"></h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="serviceModal" class="content-modal" aria-hidden="true">
+        <div class="content-modal__backdrop" id="serviceModalBackdrop" tabindex="-1"></div>
+        <div class="content-modal__panel" role="dialog" aria-modal="true" aria-labelledby="serviceModalTitle">
+            <button type="button" class="content-modal__close" id="serviceModalClose" aria-label="Закрыть">×</button>
+            <img id="serviceModalImage" class="content-modal__image content-modal__image--service" src="" alt="">
+            <div class="content-modal__meta">
+                <h3 id="serviceModalTitle"></h3>
+                <p id="serviceModalDescription"></p>
+                <ul id="serviceModalPoints" class="content-modal__list"></ul>
+                <button type="button" class="content-modal__action-btn" id="serviceModalBookBtn">Записаться на услугу</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Прогресс-бар горизонтальной прокрутки -->
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <div class="chat-assistant" id="chatAssistant">
+        <button class="chat-toggle-btn" id="chatToggleBtn" type="button" aria-label="Открыть чат-ассистента">
+            💬
+        </button>
+        <div class="chat-greeting" id="chatGreeting">Здравствуйте. Задайте вопрос — подскажу по салону.</div>
+        <div class="chat-panel" id="chatPanel">
+            <div class="chat-title">Beauty Assistant</div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot">Здравствуйте! Я консультант BeautyStyle: адрес (пр. Вернадского, 10), график, цены, услуги и запись. Напишите своими словами или выберите вопрос ниже.</div>
+            </div>
+            <form class="chat-input-row" id="chatForm">
+                <input id="chatInput" type="text" placeholder="Введите ваш вопрос..." autocomplete="off">
+                <button class="chat-send-btn" type="submit" aria-label="Отправить сообщение">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </form>
+            <div class="chat-quick-questions">
+                <button class="chat-action-btn chat-quick-btn" type="button" data-question="Какой адрес салона?">Адрес салона</button>
+                <button class="chat-action-btn chat-quick-btn" type="button" data-question="Сколько стоит стрижка?">Сколько стоит стрижка?</button>
+                <button class="chat-action-btn chat-quick-btn" type="button" data-question="Какой график работы салона?">График работы</button>
+                <button class="chat-action-btn chat-quick-btn" type="button" data-question="Как записаться на ближайшее время?">Как записаться?</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="bookingDatetimeModal" class="booking-datetime-modal" aria-hidden="true">
+        <div class="booking-datetime-modal__backdrop" id="bdBackdrop" tabindex="-1"></div>
+        <div class="booking-datetime-modal__panel" role="dialog" aria-modal="true" aria-labelledby="bdDialogTitle">
+            <div class="booking-datetime-modal__head">
+                <h3 id="bdDialogTitle">Дата и время</h3>
+                <button type="button" class="booking-datetime-modal__close" id="bdCloseX" aria-label="Закрыть">×</button>
+            </div>
+            <div class="booking-datetime-modal__body">
+                <div class="bd-cal-head">
+                    <button type="button" class="bd-cal-nav" id="bdPrev" aria-label="Предыдущий месяц">‹</button>
+                    <div class="bd-cal-title" id="bdTitleMonth" aria-live="polite"></div>
+                    <button type="button" class="bd-cal-nav" id="bdNext" aria-label="Следующий месяц">›</button>
+                </div>
+                <div class="bd-dow" aria-hidden="true">
+                    <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+                </div>
+                <div class="bd-grid" id="bdGrid"></div>
+                <div class="bd-time-block">
+                    <span class="bd-section-label">Часы</span>
+                    <div class="bd-hours" id="bdHours"></div>
+                    <span class="bd-section-label">Минуты</span>
+                    <div class="bd-minutes" id="bdMinutes"></div>
+                </div>
+            </div>
+            <div class="booking-datetime-modal__foot">
+                <button type="button" class="bd-btn bd-btn--ghost" id="bdCancel">Отмена</button>
+                <button type="button" class="bd-btn bd-btn--primary" id="bdApply">Готово</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="bookingSuccessModal" class="booking-success-modal" aria-hidden="true">
+        <div class="booking-success-modal__backdrop" id="bookingSuccessBackdrop" tabindex="-1"></div>
+        <div class="booking-success-modal__panel" role="dialog" aria-modal="true" aria-labelledby="bookingSuccessTitle">
+            <button type="button" class="booking-success-modal__close" id="bookingSuccessCloseX" aria-label="Закрыть">×</button>
+            <div class="booking-success-modal__icon" aria-hidden="true">✓</div>
+            <h3 id="bookingSuccessTitle">Запись прошла успешно</h3>
+            <p>Спасибо! Ваша заявка отправлена администратору. Мы свяжемся с вами в ближайшее время.</p>
+            <button type="button" class="booking-success-modal__btn" id="bookingSuccessOkBtn">Понятно</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js?v=26"></script>
+</body>
+</html>
